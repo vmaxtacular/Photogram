@@ -1,1 +1,8 @@
 <h1>Foodiegram</h1>
+
+<div>
+	<%= @posts.each do |post| %>
+		<%= image_tag post.image.url(:medium) %>
+		<%= post.caption %>
+	<% end %>
+</div>
